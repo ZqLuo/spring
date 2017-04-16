@@ -23,7 +23,7 @@ public class IndexController {
 
 
     @PreAuthorize("hasRole('user')")
-    @RequestMapping(value = "/admin")
+    @RequestMapping(value = "/admin",method = RequestMethod.POST)
     public String toAdmin(){
         return "helloAdmin";
     }
